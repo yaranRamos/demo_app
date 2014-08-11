@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/lungo.css">
+        <link rel="stylesheet" type="text/css" href="css/lungo.icon.css">
+        <link rel="stylesheet" type="text/css" href="css/lungo.theme.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+    <body class="app">
+		<section id="sec_login">
+			<article id="presentacion" class="idented splash scroll active">
+				<div class="form">
+					<img src="media/imagenes/dish.PNG" class="logo">
+					<br>
+					<a href="" class="button anchor" data-icon="pencil" data-label="Registro" data-view-article="registro"></a>
+				</div>
+			</article>
+			<article id="registro" class="idented splash scroll">
+				<div class="form">
+					<img src="media/imagenes/dish.PNG" class="logo">
+					<br>
+					<fieldset data-icon="user">
+						<label>N.Cliente</label>
+						<input type="text" id="n_cliente">
+					</fieldset>
+					<br>
+					<fieldset data-icon="asterisk">
+						<label>Contraseña</label>
+						<input type="password" id="contrasena">
+					</fieldset>
+					<br>
+					<a href="" id="btn_aceptar" class="button anchor" data-icon="ok" data-label="Aceptar" data-view-article="registro"></a>
+					<a href="" id="" class="button anchor" data-icon="remove" data-label="Cancelar" data-view-article="presentacion"></a>
+				</div>
+			</article>
+		</section>
+		<section id="sec_principal">
+			<header data-title="dish"></header>
+			<article id="principal" class="indented scroll active">
+				
+			</article>
+		</section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/quo.js"></script>
+        <script type="text/javascript" src="js/lungo.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

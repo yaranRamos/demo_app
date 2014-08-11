@@ -1,0 +1,32 @@
+.splash{
+	background-color: #DB2C3B !important;
+}
+.logo{
+	width: 100%;
+}
+.button{
+	background-color: #9B2E35 !important;
+	border-radius: 4px !important;
+}
+fieldset{
+	border-radius: 4px !important;
+}
+.form fieldset label{
+	width: 30% !important;
+}
+.form fieldset input{
+	width: 70% !important;
+}
+body > section > header{
+	background-color: #DB2C3B !important;
+	box-shadow: inset 0 -1px #9B2E35, 0 1px rgba(0,0,0,0.1) !important;
+	-webkit-box-shadow: inset 0 -1px #9B2E35, 0 1px rgba(0,0,0,0.1) !important;
+	-moz-box-shadow: inset 0 -1px #9B2E35, 0 1px rgba(0,0,0,0.1) !important;
+	-ms-box-shadow: inset 0 -1px #9B2E35, 0 1px rgba(0,0,0,0.1) !important;
+}
+body > section > header > .title{
+	text-shadow: 0 0.1em #9B2E35 !important;
+	-webkit-text-shadow: 0 0.1em #9B2E35 !important;
+	-moz-text-shadow: 0 0.1em #9B2E35 !important;
+	-ms-text-shadow: 0 0.1em #9B2E35 !important;
+}
