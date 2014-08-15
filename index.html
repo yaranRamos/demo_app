@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Indica que se utilizará HTML5-->
 <html lang="es">
     <head>
         <meta charset="utf-8" />
@@ -13,16 +13,20 @@
 			<article id="presentacion" class="idented splash scroll active">
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
+					<br><br>
+					<a href="" class="button anchor" data-icon="pencil" data-label="Login" data-view-article="registro"></a>
 					<br>
-					<a href="" class="button anchor" data-icon="pencil" data-label="Registro" data-view-article="registro"></a>
+					<a href="" class="button anchor" data-icon="remove-sign" data-label="Salir" data-view-article="registro"></a>
 				</div>
-			</article>
+			</article><!--Pantalla de Inicio-->
+
 			<article id="registro" class="idented splash scroll">
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
 					<br>
+					<p class="title-app">Iniciar Sesión</p><br>
 					<fieldset data-icon="user">
-						<label>N.Cliente</label>
+						<label>N. Cliente</label>
 						<input type="text" id="n_cliente">
 					</fieldset>
 					<br>
@@ -31,10 +35,11 @@
 						<input type="password" id="contrasena">
 					</fieldset>
 					<br>
-					<a href="" id="btn_aceptar" class="button anchor" data-icon="ok" data-label="Aceptar" data-view-article="registro"></a>
+					<a href="" id="btn_login" class="button anchor" data-icon="ok" data-label="Entrar" data-view-article="registro"></a>
 					<a href="" id="" class="button anchor" data-icon="remove" data-label="Cancelar" data-view-article="presentacion"></a>
 				</div>
 			</article>
+
 		</section>
 		<section id="sec_principal">
 			<header data-title="dish"></header>
@@ -46,5 +51,6 @@
         <script type="text/javascript" src="js/quo.js"></script>
         <script type="text/javascript" src="js/lungo.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
     </body>
 </html>

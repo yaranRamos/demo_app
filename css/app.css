@@ -7,6 +7,7 @@
 .button{
 	background-color: #9B2E35 !important;
 	border-radius: 4px !important;
+	margin-top: 10px !important;
 }
 fieldset{
 	border-radius: 4px !important;
@@ -29,4 +30,8 @@ body > section > header > .title{
 	-webkit-text-shadow: 0 0.1em #9B2E35 !important;
 	-moz-text-shadow: 0 0.1em #9B2E35 !important;
 	-ms-text-shadow: 0 0.1em #9B2E35 !important;
+}
+
+.title-app{
+	font-weight: bold;
 }
