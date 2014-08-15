@@ -11,17 +11,15 @@ Lungo.ready(function(){
 		var password = $$('#contrasena').val();
 
 		if(n_cliente == '' || password == '' || expRegNombre.test(n_cliente)){
-			alert("si entra al if");
 			Lungo.Notification.error(
 				"ATENCION",
 				"Ingresa Ambos Campos",
 				"warning-sign",
 				3
 			);
-			return;
 		}else{
 			alert("Los datos fueron ingresados!!");
 		}
-		//Lungo.Router.section("sec_principal");
+		Lungo.Router.section("sec_principal");
 	});
 });
