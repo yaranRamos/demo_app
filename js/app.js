@@ -17,7 +17,6 @@ Lungo.ready(function(){
 				"warning-sign",
 				3
 			);
-			return;
 		}else{
 			//realizamos ajax con lungo para ver si existe el usuario
 			// configuracion de framework lungo para AJAX
@@ -48,6 +47,6 @@ Lungo.ready(function(){
 
 			Lungo.Service.get(url,data,respuesta, "Json");
 		}
-		//Lungo.Router.section("sec_principal");
+		Lungo.Router.section("sec_principal");
 	});
 });
