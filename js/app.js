@@ -26,7 +26,7 @@ Lungo.ready(function(){
 				console.log("Error al realizar la peticion; tipo="+type);
 			}
 			Lungo.Service.Settings.crossDomain = false;
-			Lungo.Service.Settings.timeout = 3000;
+			Lungo.Service.Settings.timeout = 5000;
 		
 			//Peticion Get
 			var url = "http://dish.sharksoft.com.mx/index.php/welcome/ajax";
