@@ -87,7 +87,7 @@ Lungo.ready(function(){
 				if(resultado){
 					Lungo.Notification.success(
 					"ATENCION",
-					"Intenta Mas Tarde!!",
+					"Reporte generado con Exito!!",
 					"ok-sign",
 					3
 					);
