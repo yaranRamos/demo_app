@@ -23,7 +23,7 @@
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
 					<br>
-					<p class="title-app">Iniciar Sesión</p><br>
+					<h1>Iniciar Sesión</h1>
 					<fieldset data-icon="user">
 						<label>N. Cliente</label>
 						<input type="text" id="n_cliente">
@@ -43,21 +43,36 @@
 			<header data-title="Menú"></header>
 			<article class="list active">
 				<ul>
-					<li data-label="Asesoría Técnica" data-icon="wrench" id=""></li>
-					<li data-label="Enviar Reporte" data-icon="envelope" id=""></li>
+					<li data-label="Asesoría Técnica" data-icon="wrench" id="" data-view-article="asesoria"></li>
+					<li data-label="Enviar Reporte" data-icon="envelope" id="" data-view-article="form-reporte"></li>
 					<li data-label="Salir" data-icon="signout"></li>
 				</ul>
 			</article>
 		</aside>
 		<section id="sec_principal" data-aside="menu" data-transition="slide">
-			<header data-title="dish">
+			<header data-title="DISH">
 				<nav>
 					<button data-view-aside="menu" data-icon="menu"></button>
 				</nav>
 			</header>
-			<article id="principal" class="indented scroll active">
-				
+			<article id="asesoria" class="indented scroll active">
+				<center>
+					<h2 id="usuario"></h2>
+				</center>
 			</article>
+			
+			<article id="form-reporte" class="indented scroll">
+				<div class="form">
+					<h2>Enviar Reporte</h2>
+					<p>Si no te fue posible solucionar tu problema, escríbenos tu situación. Automáticamente se generara  un reporte el cual será recibido por nuestro equipo técnico. En breve acudiremos a tu domicilio para solucionar tu problema. </p>
+					<fieldset>
+						<textarea placeholder="Escribe tu reporte..." id="descripcion" rows="4"></textarea>
+					</fieldset><br>
+					<a href="#" id="btn_reporte" class="button anchor" data-icon="ok" data-label="Generar Reporte"></a>
+					<a href="#" id="" class="button anchor" data-icon="remove" data-view-article="asesoria" data-label="Cancelar"></a>
+				</div>
+			</article>
+		
 		</section>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/quo.js"></script>
