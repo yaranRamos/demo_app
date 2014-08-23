@@ -106,4 +106,21 @@ Lungo.ready(function(){
 			Lungo.Service.get(url,data,respuesta, "Json");
 		}
 	});
+	
+	$$('.menu-item').tap(function(){
+		//cargar los datos de acuerdo a la opcion de menu
+		var opcion = $$(this).attr('data-opc');
+		
+		Lungo.Router.article('sec_principal','dinamico');
+	});
+
+	document.addEventListener("backbutton", onBackKeyDown, false);
+	
+	function onBackKeyDown() {
+		if($$('#sec_principal').hasClass('show')){
+			navigator.app.exitApp();
+		} else {
+			Lungo.Router.back();
+		}
+	}
 });

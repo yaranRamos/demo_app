@@ -41,9 +41,10 @@ section header > nav:not(.on-right) a, section header > nav:not(.on-right) butto
 	-o-text-shadow: 0 0.1em #9B2E35 !important;
 	text-shadow: 0 0.1em #9B2E35 !important;
 }
-h1,h2,h3,h4{
+h2,h3,h4{
 	text-align: center;
 	font-weight: bold;
+	margin-top: .6em;
 	margin-bottom: 1em;
 }
 
@@ -51,4 +52,24 @@ p{
 	text-align: justify;
 	font-size: .9em;
 	margin-bottom: 1em;
+}
+.principal{
+	width: 100%;
+	overflow: auto;
+}
+.menu-derecho{
+	width: 48%;
+	float: right;
+}
+.menu-izquierdo{
+	width: 48%;
+	float: left;
+}
+.principal > div > div > fieldset{
+	padding: 10px !important;
+}
+.icono{
+	font-size: 3em !important;
+	position: inherit !important;
+	color: #DB2C3B !important;
 }

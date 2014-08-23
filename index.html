@@ -16,14 +16,14 @@
 					<br><br>
 					<a href="#" class="button anchor" data-icon="pencil" data-label="Login" data-view-article="registro"></a>
 					<br>
-					<a href="#" class="button anchor" data-icon="remove-sign" data-label="Salir" data-view-article="registro"></a>
+					<a href="#" class="button anchor" data-icon="remove-sign" data-label="Salir" onclick="Lungo.Router.section('sec_principal');"></a>
 				</div>
 			</article><!--Pantalla de Inicio-->
 			<article id="registro" class="idented splash scroll">
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
 					<br>
-					<h1>Iniciar Sesión</h1>
+					<h2>Iniciar Sesión</h2>
 					<fieldset data-icon="user">
 						<label>N. Cliente</label>
 						<input type="text" id="n_cliente">
@@ -59,6 +59,55 @@
 				<center>
 					<h2 id="usuario"></h2>
 				</center>
+				<div class="principal">
+					<div class="menu-izquierdo menu-item" data-opc="1">
+						<div class="form">
+							<fieldset>
+								<center>
+									<h2>Titulo</h2>
+									<span class="icon pencil icono"></span>
+								</center>
+							</fieldset>
+						</div>
+					</div>
+					<div class="menu-derecho menu-item" data-opc="2">
+						<div class="form">
+							<fieldset>
+								<center>
+									<h2>Titulo</h2>
+									<span class="icon pencil icono"></span>
+								</center>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				<div class="principal">
+					<div class="menu-izquierdo menu-item" data-opc="3">
+						<div class="form">
+							<fieldset>
+								<center>
+									<h2>Titulo</h2>
+									<span class="icon pencil icono"></span>
+								</center>
+							</fieldset>
+						</div>
+					</div>
+					<div class="menu-derecho menu-item" data-opc="4">
+						<div class="form">
+							<fieldset>
+								<center>
+									<h2>Titulo</h2>
+									<span class="icon pencil icono"></span>
+								</center>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article id="dinamico" class="idented scroll">
+				<!--article donde se mostrara la informacion de las asesoria tecnica-->
+				<center><h2 id="">Titulo</h2></center>
 			</article>
 			
 			<article id="form-reporte" class="indented scroll">
