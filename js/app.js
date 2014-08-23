@@ -17,7 +17,6 @@ Lungo.ready(function(){
 				"warning-sign",
 				3
 			);
-			return;
 		}else{
 			//realizamos ajax con lungo para ver si existe el usuario
 			// configuracion de framework lungo para AJAX
@@ -32,12 +31,22 @@ Lungo.ready(function(){
 			var url = "http://dish.sharksoft.com.mx/index.php/welcome/ajax";
 			var data = {id:n_cliente,password:password};
 			var respuesta = function(data){
-				console.log(data);
+				var data = JSON.parse(data);
+				if(data == false){
+					Lungo.Notification.error(
+						"ATENCION",
+						"El Usuario No Existe!",
+						"warning-sign",
+						3
+					);
+					return;
+				}else{
+					console.log("si existe");
+				}
 			}
 
 			Lungo.Service.get(url,data,respuesta, "Json");
-
 		}
-		//Lungo.Router.section("sec_principal");
+		Lungo.Router.section("sec_principal");
 	});
 });

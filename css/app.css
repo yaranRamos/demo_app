@@ -30,8 +30,13 @@ body > section > header > .title{
 	-webkit-text-shadow: 0 0.1em #9B2E35 !important;
 	-moz-text-shadow: 0 0.1em #9B2E35 !important;
 	-ms-text-shadow: 0 0.1em #9B2E35 !important;
-}
-
-.title-app{
 	font-weight: bold;
+}
+section header > nav:not(.on-right) a, section header > nav:not(.on-right) button {
+	color: #f4f4f4;
+	-webkit-text-shadow: 0 0.1em #9B2E35 !important;
+	-moz-text-shadow: 0 0.1em #9B2E35 !important;
+	-ms-text-shadow: 0 0.1em #9B2E35 !important;
+	-o-text-shadow: 0 0.1em #9B2E35 !important;
+	text-shadow: 0 0.1em #9B2E35 !important;
 }
