@@ -4,6 +4,16 @@
 .logo{
 	width: 100%;
 }
+.img-falla{
+	width: 55%;
+}
+.img-falla-dos{
+	width: 100%;
+}
+.img-falla-antena{
+	margin-top: 10px !important;
+	width: 90%;
+}
 .button{
 	background-color: #9B2E35 !important;
 	border-radius: 4px !important;
@@ -72,4 +82,16 @@ p{
 	font-size: 3em !important;
 	position: inherit !important;
 	color: #DB2C3B !important;
+}
+
+.subtitulo{
+	font-size: 1em !important;
+}
+
+.alim-equipo{
+	font-size: 1em !important;
+}
+
+.alim-equipo-text{
+	margin: 0 1em;
 }

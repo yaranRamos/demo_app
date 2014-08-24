@@ -9,7 +9,9 @@
         <link rel="stylesheet" type="text/css" href="css/app.css">
     </head>
     <body class="app">
+		
 		<section id="sec_login">
+			
 			<article id="presentacion" class="idented splash scroll active">
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
@@ -19,6 +21,7 @@
 					<a href="#" class="button anchor" data-icon="remove-sign" data-label="Salir" onclick="Lungo.Router.section('sec_principal');"></a>
 				</div>
 			</article><!--Pantalla de Inicio-->
+			
 			<article id="registro" class="idented splash scroll">
 				<div class="form">
 					<img src="media/imagenes/dish.PNG" class="logo">
@@ -38,6 +41,7 @@
 					<a href="" id="" class="button anchor" data-icon="remove" data-label="Cancelar" data-view-article="presentacion"></a>
 				</div>
 			</article>
+		
 		</section>
 		<aside id="menu">
 			<header data-title="Menú"></header>
@@ -49,45 +53,47 @@
 				</ul>
 			</article>
 		</aside>
+		
 		<section id="sec_principal" data-aside="menu" data-transition="slide">
 			<header data-title="DISH">
 				<nav>
 					<button data-view-aside="menu" data-icon="menu"></button>
 				</nav>
 			</header>
+			
 			<article id="asesoria" class="indented scroll active">
 				<center>
-					<h2 id="usuario"></h2>
+					<h2>Asesoría Técnica</h2>
 				</center>
 				<div class="principal">
-					<div class="menu-izquierdo menu-item" data-opc="1">
+					<div class="menu-izquierdo"  data-view-article="alimentacion-equipo">
 						<div class="form">
 							<fieldset>
 								<center>
-									<h2>Titulo</h2>
-									<span class="icon pencil icono"></span>
+									<h2 class="subtitulo">Alimentación de Equipo (no enciende)</h2>
+									<span class="icon wrench icono"></span>
 								</center>
 							</fieldset>
 						</div>
 					</div>
-					<div class="menu-derecho menu-item" data-opc="2">
+					<div class="menu-derecho" data-view-article="alimentacion-electrica"  data-voe>
 						<div class="form">
 							<fieldset>
 								<center>
-									<h2>Titulo</h2>
-									<span class="icon pencil icono"></span>
+									<h2 class="subtitulo">Alimentación Electrica (cliente)</h2>
+									<span class="icon bolt icono"></span>
 								</center>
 							</fieldset>
 						</div>
 					</div>
 				</div>
 				<div class="principal">
-					<div class="menu-izquierdo menu-item" data-opc="3">
+					<div class="menu-izquierdo menu-item" data-view-article="antena">
 						<div class="form">
 							<fieldset>
 								<center>
-									<h2>Titulo</h2>
-									<span class="icon pencil icono"></span>
+									<h2 class="subtitulo">Ajustes Antena</h2>
+									<span class="icon signal icono"></span>
 								</center>
 							</fieldset>
 						</div>
@@ -96,7 +102,7 @@
 						<div class="form">
 							<fieldset>
 								<center>
-									<h2>Titulo</h2>
+									<h2 class="subtitulo">Nuevo</h2>
 									<span class="icon pencil icono"></span>
 								</center>
 							</fieldset>
@@ -104,10 +110,54 @@
 					</div>
 				</div>
 			</article>
+			
+			<!--article donde se mostrara la informacion de las asesoria tecnica-->
+			<article id="alimentacion-equipo" class="idented scroll">
+				<center><h2 id="">Alimentación de Equipo (no enciende)</h2></center>
+				<h3 class="alim-equipo">EL Receptor No Enciende</h3>
+				<p class="alim-equipo-text">Revisa que el receptor y el televisor estén conectados a una red de energía eléctrica en buen estado.</p>
+				<center>
+					<img src="media/imagenes/uno.PNG" class="img-falla" /><br>
+					<img src="media/imagenes/dos.PNG" class="img-falla" />
+				</center><br><br>
 
-			<article id="dinamico" class="idented scroll">
-				<!--article donde se mostrara la informacion de las asesoria tecnica-->
-				<center><h2 id="">Titulo</h2></center>
+				<p class="alim-equipo-text">Revisa que el cordón de alimentación del receptor del cliente cuente con clavija sin rasgaduras, cortada o deteriorada.</p>
+				<center>
+					<img src="media/imagenes/tres.PNG" class="img-falla"><br>
+					<img src="media/imagenes/cuatro.PNG" class="img-falla">
+				</center><br><br>
+				<center><a href="#" class="button" data-icon="remove-sign" data-view-article="asesoria" data-label="Regresar"></a></center><br>
+			</article>
+
+			<!--article donde se mostrara la informacion de las asesoria tecnica-->
+			<article id="alimentacion-electrica" class="idented scroll">
+				<center><h2 id="">Alimentación Electrica (cliente)</h2></center>
+				<h3 class="alim-equipo">Validar que no encienda directamente desde el panel frontal ni con control
+				remoto</h3>
+				<p class="alim-equipo-text">Una vez hecho el cambio de contacto, verifica que el receptor encienda con el control remoto. De no ser así, comprueba manualmente empujando el botón de POWER de su receptor hasta que se escuche un click.
+				</p>
+				<center>
+					<img src="media/imagenes/cinco.PNG" class="img-falla-dos">
+				</center><br><br>
+				<p class="alim-equipo-text">En caso de no solucionar el problema, llama a tu mesa de control para generar un servicio técnico.</p>
+				<center><a href="#" class="button" data-icon="remove-sign" data-view-article="asesoria" data-label="Regresar"></a></center><br>
+			</article>
+
+			<article id="antena" class="idented scroll">
+				<center><h2 id="">Ajustes Antena</h2></center>
+				<p class="alim-equipo-text">Para realizar una correcta orientación de la antena, se deberá tomar 		por la parte de atrás de la antena y girarla en los grados de azimut y elevación correcta, 	
+					buscando obtener el máximo nivel de potencia de la señal.
+				</p>
+				<center>
+					<img src="media/imagenes/seis.PNG" class="img-falla-antena"/>
+				</center><br><br>
+				<p class="alim-equipo-text">
+					Es muy importante que al momento de realizar la correcta orientación de la antena DISH se tenga una línea de vista libre de obstáculos entre ésta y el satélite.
+				</p>
+				<center>
+					<img src="media/imagenes/siete.PNG" class="img-falla-antena"/>
+				</center><br><br>
+				<center><a href="#" class="button" data-icon="remove-sign" data-view-article="asesoria" data-label="Regresar"></a></center><br>
 			</article>
 			
 			<article id="form-reporte" class="indented scroll">

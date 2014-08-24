@@ -44,7 +44,7 @@ Lungo.ready(function(){
 					localStorage["id_persona"] = data.id;
 					localStorage["nombre"] = data.nombre;
 					Lungo.Router.section("sec_principal");
-					$$("#usuario").html(localStorage["nombre"]);
+					//$$("#usuario").html(localStorage["nombre"]);
 				}
 			}
 
@@ -107,12 +107,13 @@ Lungo.ready(function(){
 		}
 	});
 	
-	$$('.menu-item').tap(function(){
+	/*$$('.menu-item').tap(function(){
 		//cargar los datos de acuerdo a la opcion de menu
 		var opcion = $$(this).attr('data-opc');
+		console.log(opcion);
 		
 		Lungo.Router.article('sec_principal','dinamico');
-	});
+	});*/
 
 	document.addEventListener("backbutton", onBackKeyDown, false);
 	
