@@ -18,7 +18,7 @@
 					<br><br>
 					<a href="#" class="button anchor" data-icon="pencil" data-label="Login" data-view-article="registro"></a>
 					<br>
-					<a href="#" class="button anchor" data-icon="remove-sign" data-label="Salir" onclick="Lungo.Router.section('sec_principal');"></a>
+					<a href="#" class="button anchor" data-icon="remove-sign" data-label="Salir" onclick="navigator.app.exitApp();"></a>
 				</div>
 			</article><!--Pantalla de Inicio-->
 			
@@ -49,7 +49,8 @@
 				<ul>
 					<li data-label="Asesoría Técnica" data-icon="wrench" id="" data-view-article="asesoria"></li>
 					<li data-label="Enviar Reporte" data-icon="envelope" id="" data-view-article="form-reporte"></li>
-					<li data-label="Salir" data-icon="signout"></li>
+					<li data-label="Cerrar Sesión" data-icon="remove-sign" id="cerrar_sesion"></li>
+					<li data-label="Salir" data-icon="signout" onclick="navigator.app.exitApp();"></li>
 				</ul>
 			</article>
 		</aside>

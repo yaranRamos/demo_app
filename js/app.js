@@ -4,6 +4,13 @@ Lungo.init({
 });
 // Inicializa la aplicacion
 Lungo.ready(function(){
+
+	if(localStorage.getItem("nombre")){
+		Lungo.Router.section('sec_principal');
+	}else{
+		Lungo.Router.section('sec_login');
+	}
+
 	$$('#btn_login').tap(function(){
 		//VALIDACION DE CAMPOS VACIOS
 		var expRegNombre = /^\s*$/;//expRegular valida no vacio
@@ -107,21 +114,17 @@ Lungo.ready(function(){
 		}
 	});
 	
-	/*$$('.menu-item').tap(function(){
-		//cargar los datos de acuerdo a la opcion de menu
-		var opcion = $$(this).attr('data-opc');
-		console.log(opcion);
-		
-		Lungo.Router.article('sec_principal','dinamico');
-	});*/
-
+	$$('#cerrar_sesion').tap(function(){
+		localStorage.clear();
+		location.reload();
+	});
 	document.addEventListener("backbutton", onBackKeyDown, false);
 	
 	function onBackKeyDown() {
-		if($$('#sec_principal').hasClass('show')){
+		if($$('#asesoria').hasClass('active')){
 			navigator.app.exitApp();
 		} else {
-			Lungo.Router.back();
+			Lungo.Router.article('sec_principal','asesoria');
 		}
 	}
 });

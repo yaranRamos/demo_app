@@ -65,7 +65,7 @@ p{
 }
 .principal{
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 .menu-derecho{
 	width: 48%;
